@@ -1,0 +1,18 @@
+#!/bin/bash
+# Verificar espacios en blanco al final
+if git diff --cached --check | grep -q "trailing whitespace"; then
+  echo "❌ Commit rechazado: ¡Espacios en blanco detectados!"
+  exit 1
+fi
+
+# Verificar sintaxis de archivos Python (si existen)
+for file in $(git diff --cached --name-only --diff-filter=ACM | grep '\.py$'); do
+  python -m py_compile "$file"
+  if [ $? -ne 0 ]; then
+    echo "❌ Error de sintaxis en $file"
+    exit 1
+  fi
+done
+
+echo "✅ Verificaciones pre-commit pasadas!"
+exit 0
