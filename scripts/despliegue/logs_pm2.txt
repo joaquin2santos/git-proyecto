@@ -1,0 +1,103 @@
+=== Inicio despliegue Node.js con PM2 ===
+Verificando Node.js y npm...
+Node.js y npm ya están instalados.
+Verificando PM2...
+PM2 ya está instalado.
+El directorio /mnt/c/Users/BANGHO/Desktop/facultad/devops-90/git-proyecto/scripts/despliegue/devops-static-web_2 ya existe. Actualizando repo...
+Already on 'ecommerce-ms'
+Your branch is up to date with 'origin/ecommerce-ms'.
+From https://github.com/roxsross/devops-static-web
+ * branch            ecommerce-ms -> FETCH_HEAD
+Already up to date.
+Desplegando aplicación frontend...
+
+added 50 packages, and audited 51 packages in 3s
+
+7 vulnerabilities (3 low, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[PM2] Starting /usr/bin/npm in fork_mode (1 instance)
+[PM2] Done.
+┌────┬───────────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name                  │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼───────────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ ecommerce-frontend    │ default     │ N/A     │ fork    │ 5763     │ 0s     │ 0    │ online    │ 0%       │ 27.4mb   │ joaco    │ disabled │
+└────┴───────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+Desplegando aplicación merchandise...
+
+added 50 packages, and audited 51 packages in 1s
+
+7 vulnerabilities (3 low, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[PM2] Starting /usr/bin/npm in fork_mode (1 instance)
+[PM2] Done.
+┌────┬──────────────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name                     │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼──────────────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ ecommerce-frontend       │ default     │ N/A     │ fork    │ 5763     │ 1s     │ 0    │ online    │ 0%       │ 62.9mb   │ joaco    │ disabled │
+│ 1  │ ecommerce-merchandise    │ default     │ N/A     │ fork    │ 5802     │ 0s     │ 0    │ online    │ 0%       │ 22.2mb   │ joaco    │ disabled │
+└────┴──────────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+Desplegando aplicación products...
+
+added 50 packages, and audited 51 packages in 2s
+
+7 vulnerabilities (3 low, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[PM2] Starting /usr/bin/npm in fork_mode (1 instance)
+[PM2] Done.
+┌────┬──────────────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name                     │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼──────────────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ ecommerce-frontend       │ default     │ N/A     │ fork    │ 5763     │ 3s     │ 0    │ online    │ 0%       │ 62.9mb   │ joaco    │ disabled │
+│ 1  │ ecommerce-merchandise    │ default     │ N/A     │ fork    │ 5802     │ 1s     │ 0    │ online    │ 0%       │ 62.2mb   │ joaco    │ disabled │
+│ 2  │ ecommerce-products       │ default     │ N/A     │ fork    │ 5841     │ 0s     │ 0    │ online    │ 0%       │ 22.3mb   │ joaco    │ disabled │
+└────┴──────────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+Desplegando aplicación shopping-cart...
+
+added 50 packages, and audited 51 packages in 2s
+
+7 vulnerabilities (3 low, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[PM2] Starting /usr/bin/npm in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────────────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name                       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼────────────────────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ ecommerce-frontend         │ default     │ N/A     │ fork    │ 5763     │ 5s     │ 0    │ online    │ 0%       │ 63.5mb   │ joaco    │ disabled │
+│ 1  │ ecommerce-merchandise      │ default     │ N/A     │ fork    │ 5802     │ 3s     │ 0    │ online    │ 0%       │ 62.2mb   │ joaco    │ disabled │
+│ 2  │ ecommerce-products         │ default     │ N/A     │ fork    │ 5841     │ 2s     │ 0    │ online    │ 0%       │ 62.8mb   │ joaco    │ disabled │
+│ 3  │ ecommerce-shopping-cart    │ default     │ N/A     │ fork    │ 5880     │ 0s     │ 0    │ online    │ 0%       │ 29.6mb   │ joaco    │ disabled │
+└────┴────────────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+Guardando configuración PM2 para reinicio automático...
+[PM2] Saving current process list...
+[PM2] Successfully saved in /home/joaco/.pm2/dump.pm2
+=== Despliegue finalizado ===
+Para ver el estado de las apps: pm2 list
+Para ver logs: pm2 logs
